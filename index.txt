@@ -7,6 +7,43 @@
 body{
  background: linear-gradient(white, grey);
 }
+
+#mySidenav a {
+  position: absolute;
+  left: -10px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 170px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #f44336;
+}
+
+#blog {
+  top: 80px;
+  background-color: #555;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555
+}
+
 .circle {
   height: 55px;
   width: 55px;
@@ -146,7 +183,12 @@ background-color:grey;
 </head>
 <body>
 
-
+<div id="mySidenav" class="sidenav">
+  <a href="bb.html" id="about">About</a>
+  <a href="#" id="blog">Service</a>
+  <a href="#" id="projects">Projects</a>
+  <a href="#" id="contact">Contact</a>
+</div>
 
 <div class="circle"><p>BB</p></div>
 <h1><span style="color:red">BUSINESS</span><span style="color:grey">BECAUSE</span></h1>
